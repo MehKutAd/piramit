@@ -8,6 +8,7 @@ public class piramit {
         System.out.print("Satır sayısı giriniz: ");
         int a = scanIn.nextInt();
         islem(a);
+        alt(a);
     }
 
     public static void islem(int rews) {
@@ -23,5 +24,13 @@ public class piramit {
     public static void bosluk(int count) {
         for(int i=1; i <= count ; i++)
             System.out.print(" ");
+    }
+    public static void alt(int count) {
+        for(int i=count-1; i >= 1 ; i--) {
+            bosluk(count-i);
+            for (int j= i; j >= 1 ; j--)
+                System.out.print("* ");
+            System.out.println();
+        }
     }
 }

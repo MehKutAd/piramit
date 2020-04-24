@@ -5,7 +5,7 @@ public class piramit {
 
     public static void main(String[] args) {
         Scanner scanIn= new Scanner(System.in);
-        System.out.print("satır sayısıgiriniz: ");
+        System.out.print("satır sayısı giriniz: ");
         int a = scanIn.nextInt();
         islem(a);
     }
